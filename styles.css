@@ -1,0 +1,57 @@
+body, h1, h2,p {
+   
+    margin: 0;
+    padding: 0;
+}
+body { 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:azure;
+}
+
+header {
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1:hover {
+    color:green;
+}
+
+main{
+    padding: 2rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+
+
+}
+.photo img {
+    max-width: 50%;
+    height: auto;
+
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.932);
+}
+
+.bio {
+    flex: 2;
+}
+
+footer {
+    text-align: center;
+    padding:2px 0;
+    background-color: #333;
+    color: goldenrod;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+    }
+}
